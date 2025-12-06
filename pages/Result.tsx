@@ -74,6 +74,13 @@ const Result: React.FC = () => {
 
             const imageBlob = await new Promise<Blob | null>(resolve => canvas.toBlob(resolve, 'image/png'));
 
+            const base64 = canvas.toDataURL("image/png").split(",")[1];
+
+if (window.Android && Android.shareBase64Image) {
+    Android.shareBase64Image("anam-share.png", base64);
+    return;
+}
+
             if (imageBlob) {
                 const file = new File([imageBlob], 'anam-score.png', { type: 'image/png' });
 
