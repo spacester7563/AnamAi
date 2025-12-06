@@ -1,0 +1,7 @@
+{
+  "name": "Anam - AI Face Scorecard",
+  "description": "An AI-powered application that analyzes facial features, appearance, hair, and style to generate comprehensive score cards using Gemini.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
