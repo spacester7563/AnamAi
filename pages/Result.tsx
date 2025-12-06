@@ -49,62 +49,70 @@ const Result: React.FC = () => {
         .sort((a, b) => b.score - a.score)
         .slice(0, 5);
 
-    const handleShare = async () => {
-        if (!shareRef.current || sharing) return;
+  const handleShare = async () => {
+    if (!shareRef.current || sharing) return;
 
-        setSharing(true);
-        try {
-            // Use the hidden shareRef for capture
-            const canvas = await html2canvas(shareRef.current, {
-                useCORS: true,
-                backgroundColor: theme === 'dark' ? '#0f172a' : '#f8fafc',
-                scale: 3, // Higher resolution for crisp text
-                logging: false,
-                onclone: (clonedDoc: Document) => {
-                    // Ensure the cloned element is visible for capture
-                    const element = clonedDoc.getElementById('share-card-container');
-                    if (element) {
-                        element.style.display = 'block';
-                        element.style.position = 'relative';
-                        element.style.left = '0';
-                        element.style.top = '0';
-                    }
-                }
-            });
-
-            const imageBlob = await new Promise<Blob | null>(resolve => canvas.toBlob(resolve, 'image/png'));
-
-            const base64 = canvas.toDataURL("image/png").split(",")[1];
-
-if (window.Android && Android.shareBase64Image) {
-    Android.shareBase64Image("anam-share.png", base64);
-    return;
-}
-
-            if (imageBlob) {
-                const file = new File([imageBlob], 'anam-score.png', { type: 'image/png' });
-
-                if (navigator.share) {
-                    await navigator.share({
-                        title: 'My Anam AI Score',
-                        text: `I got a ${result.overallScore} on my ${type} Score!`,
-                        files: [file]
-                    });
-                } else {
-                    // Fallback for browsers that don't support file sharing via navigator
-                    const link = document.createElement('a');
-                    link.href = canvas.toDataURL('image/png');
-                    link.download = 'anam-score.png';
-                    link.click();
+    setSharing(true);
+    try {
+        const canvas = await html2canvas(shareRef.current, {
+            useCORS: true,
+            backgroundColor: theme === 'dark' ? '#0f172a' : '#f8fafc',
+            scale: 3,
+            logging: false,
+            onclone: (clonedDoc: Document) => {
+                const el = clonedDoc.getElementById('share-card-container');
+                if (el) {
+                    el.style.display = 'block';
+                    el.style.position = 'relative';
+                    el.style.left = '0';
+                    el.style.top = '0';
                 }
             }
-        } catch (error) {
-            console.error("Sharing failed:", error);
-            alert("Could not share image. Try taking a screenshot manually.");
-        } finally {
-            setSharing(false);
+        });
+
+        // Convert Canvas → Base64
+        const base64 = canvas.toDataURL("image/png").split(",")[1];
+
+        // ⭐ ANDROID SHARE (WebView App)
+        if (window.Android && Android.shareBase64Image) {
+            Android.shareBase64Image("anam-share.png", base64);
+            return; // 🔥 important: stop here, don't run browser share
         }
-    };
+
+        // ⭐ Browser Blob output
+        const imageBlob = await new Promise<Blob | null>(resolve =>
+            canvas.toBlob(resolve, "image/png")
+        );
+
+        if (imageBlob) {
+            const file = new File([imageBlob], "anam-score.png", {
+                type: "image/png"
+            });
+
+            // Browser native share
+            if (navigator.share) {
+                await navigator.share({
+                    title: "My Anam AI Score",
+                    text: `I got a ${result.overallScore} on my ${type} Score!`,
+                    files: [file]
+                });
+            } else {
+                // Browser fallback download
+                const link = document.createElement("a");
+                link.href = canvas.toDataURL("image/png");
+                link.download = "anam-score.png";
+                link.click();
+            }
+        }
+
+    } catch (error) {
+        console.error("Sharing failed:", error);
+        alert("Could not share image. Try taking a screenshot manually.");
+    } finally {
+        setSharing(false);
+    }
+};
+
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-dark pb-24 transition-colors duration-300">
