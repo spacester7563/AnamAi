@@ -26,7 +26,7 @@ const PrivacyPolicy: React.FC = () => {
           This Privacy Policy explains how Anam Ai (“we”, “our”, or “the App”) collects, uses, discloses, and stores information when you use the Anam Ai Android application. By installing or using the App you agree to this Privacy Policy.
         </p>
 
-        <h3 class="text-xl font-semibold mb-2">Summary / Google Play Data Safety (short)</h3>
+        <h3 class="text-xl font-semibold mb-2">Google Play Data Safety</h3>
         <p class="text-gray-600 dark:text-gray-400 mb-6">
           <strong>Data types accessed/processed:</strong> User-supplied photos &amp; images (face images), inferred face/appearance attributes (scores for face features, hair, outfit, physique). These may be sensitive (biometric-derived attributes like face analysis).
         </p>
@@ -102,12 +102,7 @@ const PrivacyPolicy: React.FC = () => {
           • <strong>Contact us:</strong> For privacy questions or requests, email <a href="mailto:spacester7563@gmail.com" class="underline">spacester7563@gmail.com</a>. We will respond in a reasonable time to help you understand what the app stores and available deletion options.
         </p>
 
-        <h3 class="text-xl font-semibold mb-2">9. Changes to this policy</h3>
-        <p class="text-gray-600 dark:text-gray-400 mb-6">
-          We may update this Privacy Policy. We will post an updated version in the app or on the Play Store listing and update the Effective date above. Continued use after changes constitutes acceptance.
-        </p>
-
-        <h3 class="text-xl font-semibold mb-2">10. Contact</h3>
+        <h3 class="text-xl font-semibold mb-2">9. Contact</h3>
         <p class="text-gray-600 dark:text-gray-400 mb-6">
           If you have questions about this Privacy Policy, email: <a href="mailto:spacester7563@gmail.com" class="underline">spacester7563@gmail.com</a>.
         </p>
