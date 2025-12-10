@@ -50,19 +50,8 @@ const TermsConditions: React.FC = () => {
       <p class="text-gray-600 dark:text-gray-400 mb-6">
         Anam Ai and its developers are not liable for any damages resulting from the use
         or inability to use the app or reliance on AI-generated content.
-      </p>
-
-      <h3 class="text-xl font-semibold mb-2">6. Termination</h3>
-      <p class="text-gray-600 dark:text-gray-400 mb-6">
-        We reserve the right to suspend or terminate access to the app if these terms are violated.
-        Users may stop using the app at any time by uninstalling it.
-      </p>
-
-      <h3 class="text-xl font-semibold mb-2">7. Governing Law</h3>
-      <p class="text-gray-600 dark:text-gray-400 mb-6">
-        These Terms shall be governed by and interpreted in accordance with the laws of India.
-      </p>
-
+      </p> 
+        
       <h3 class="text-xl font-semibold mb-2">8. Contact</h3>
       <p class="text-gray-600 dark:text-gray-400 mb-6">
         For any questions regarding these Terms, please contact:
