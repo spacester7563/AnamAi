@@ -28,7 +28,7 @@ const TermsConditions: React.FC = () => {
 
         <h3 class="text-xl font-semibold mb-2">2. Eligibility &amp; age</h3>
         <p class="text-gray-600 dark:text-gray-400 mb-6">
-          • You must be at least <strong>13 years old</strong> to use the App. If you are under 18, you should have permission from a parent or guardian.<br />
+          • You must be at least having minimum age as required by google play store.<br />
           • By using the App you represent and warrant that you have the legal right to submit any image you provide and that you consent to the processing described in the Privacy Policy.
         </p>
 
@@ -53,7 +53,7 @@ const TermsConditions: React.FC = () => {
 
         <h3 class="text-xl font-semibold mb-2">6. Third-party services</h3>
         <p class="text-gray-600 dark:text-gray-400 mb-6">
-          • The App relies on third-party services (notably Google Gemini). Use of those services is subject to their terms and privacy policies. We are not responsible for their practices or any issues arising from their processing.
+          • The App relies on third-party services (Google Gemini API). Use of those services is subject to their terms and privacy policies. We are not responsible for their practices or any issues arising from their processing.
         </p>
 
         <h3 class="text-xl font-semibold mb-2">7. Limitation of liability</h3>
@@ -67,22 +67,7 @@ const TermsConditions: React.FC = () => {
           You agree to indemnify and hold harmless the developers, affiliates, and service providers from any claims, losses, liabilities, damages, costs, and expenses arising from your misuse of the App or violation of these Terms.
         </p>
 
-        <h3 class="text-xl font-semibold mb-2">9. Termination</h3>
-        <p class="text-gray-600 dark:text-gray-400 mb-6">
-          We may suspend or terminate your access to the App if you violate these Terms or for any other reason. You may stop using the App at any time by uninstalling it.
-        </p>
-
-        <h3 class="text-xl font-semibold mb-2">10. Governing law &amp; disputes</h3>
-        <p class="text-gray-600 dark:text-gray-400 mb-6">
-          These Terms are governed by the laws of <strong>India</strong> (without regard to conflict-of-law principles). Any dispute arising from these Terms will be subject to the exclusive jurisdiction of courts located in India.
-        </p>
-
-        <h3 class="text-xl font-semibold mb-2">11. Changes to Terms</h3>
-        <p class="text-gray-600 dark:text-gray-400 mb-6">
-          We may modify these Terms. We will update the Effective date above. Continued use after changes constitutes acceptance.
-        </p>
-
-        <h3 class="text-xl font-semibold mb-2">12. Contact</h3>
+        <h3 class="text-xl font-semibold mb-2">9. Contact</h3>
         <p class="text-gray-600 dark:text-gray-400 mb-6">
           For support, privacy questions, or legal requests, contact: <a href="mailto:spacester7563@gmail.com" class="underline">spacester7563@gmail.com</a>
         </p>
