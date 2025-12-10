@@ -56,18 +56,7 @@ const TermsConditions: React.FC = () => {
           • The App relies on third-party services (Google Gemini API). Use of those services is subject to their terms and privacy policies. We are not responsible for their practices or any issues arising from their processing.
         </p>
 
-        <h3 class="text-xl font-semibold mb-2">7. Limitation of liability</h3>
-        <p class="text-gray-600 dark:text-gray-400 mb-6">
-          • To the maximum extent permitted by law, in no event will we, our officers, affiliates or suppliers be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, arising from your use of the App, including any analysis results, or reliance on them.<br />
-          • Our total aggregate liability for all claims related to the App will not exceed the amount you paid to download the App (if any), or a nominal amount (e.g., INR 500 / USD 5) if the App was free — whichever is greater.
-        </p>
-
-        <h3 class="text-xl font-semibold mb-2">8. Indemnity</h3>
-        <p class="text-gray-600 dark:text-gray-400 mb-6">
-          You agree to indemnify and hold harmless the developers, affiliates, and service providers from any claims, losses, liabilities, damages, costs, and expenses arising from your misuse of the App or violation of these Terms.
-        </p>
-
-        <h3 class="text-xl font-semibold mb-2">9. Contact</h3>
+        <h3 class="text-xl font-semibold mb-2">7. Contact</h3>
         <p class="text-gray-600 dark:text-gray-400 mb-6">
           For support, privacy questions, or legal requests, contact: <a href="mailto:spacester7563@gmail.com" class="underline">spacester7563@gmail.com</a>
         </p>
