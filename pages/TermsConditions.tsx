@@ -52,7 +52,7 @@ const TermsConditions: React.FC = () => {
         or inability to use the app or reliance on AI-generated content.
       </p> 
         
-      <h3 class="text-xl font-semibold mb-2">8. Contact</h3>
+      <h3 class="text-xl font-semibold mb-2">6. Contact</h3>
       <p class="text-gray-600 dark:text-gray-400 mb-6">
         For any questions regarding these Terms, please contact:
         <span class="font-medium">spacester7563@gmail.com</span>
