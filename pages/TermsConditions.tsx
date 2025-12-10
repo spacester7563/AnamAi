@@ -17,32 +17,54 @@ const TermsConditions: React.FC = () => {
       <div className="prose dark:prose-invert prose-sm max-w-none">
         <p className="text-gray-600 dark:text-gray-400 mb-6">Last updated: {new Date().toLocaleDateString()}</p>
 
-        <h3 className="font-bold text-lg mb-2">1. Acceptance of Terms</h3>
-        <p className="mb-4 text-gray-600 dark:text-gray-300">
-          By accessing and using Anam, you accept and agree to be bound by the terms and provision of this agreement.
-        </p>
+      <p class="text-gray-600 dark:text-gray-400 mb-6">
+        Anam Ai respects your privacy. This Privacy Policy explains how we handle information
+        when you use our Android application “Anam Ai”.
+      </p>
 
-        <h3 className="font-bold text-lg mb-2">2. Description of Service</h3>
-        <p className="mb-4 text-gray-600 dark:text-gray-300">
-          Anam provides AI-powered analysis of facial features and appearance. 
-          The scores and recommendations provided are for entertainment and informational purposes only and should not be considered professional advice.
-        </p>
+      <h3 class="text-xl font-semibold mb-2">1. Information We Collect</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-6">
+        The app processes face images that users voluntarily upload to generate AI-based
+        appearance analysis, including face score, facial features, hair, outfit, and physique.
+      </p>
 
-        <h3 className="font-bold text-lg mb-2">3. User Conduct</h3>
-        <p className="mb-4 text-gray-600 dark:text-gray-300">
-          You agree to only upload images that you own or have the right to use. 
-          You agree not to use the service for any illegal or unauthorized purpose.
-        </p>
+      <h3 class="text-xl font-semibold mb-2">2. Data Storage</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-6">
+        We do not store any personal data or images on our servers. The app does not require
+        login and is not connected to any external database. Any saved history is stored only
+        locally on your device and is deleted automatically when you uninstall the app.
+      </p>
 
-        <h3 className="font-bold text-lg mb-2">4. Disclaimer</h3>
-        <p className="mb-4 text-gray-600 dark:text-gray-300">
-          The application and its content are provided "as is" and "as available" without any warranty or representations of any kind, whether express or implied.
-        </p>
+      <h3 class="text-xl font-semibold mb-2">3. AI & Third-Party Processing</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-6">
+        Image analysis and AI chat functionality are powered by Google Gemini AI. When you
+        use these features, the necessary data is securely transmitted to Google for processing
+        under Google’s privacy policies.
+      </p>
 
-        <h3 className="font-bold text-lg mb-2">5. Changes to Terms</h3>
-        <p className="mb-4 text-gray-600 dark:text-gray-300">
-          We reserve the right to modify these terms at any time. Your continued use of the service constitutes agreement to such modifications.
-        </p>
+      <h3 class="text-xl font-semibold mb-2">4. Use of Information</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-6">
+        Collected data is used solely to provide face score analysis, appearance feedback,
+        and improvement suggestions. We do not sell, share, or misuse user information.
+      </p>
+
+      <h3 class="text-xl font-semibold mb-2">5. Children’s Privacy</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-6">
+        Anam Ai is not intended for children under the age of 13. We do not knowingly collect
+        data from minors.
+      </p>
+
+      <h3 class="text-xl font-semibold mb-2">6. Security</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-6">
+        We use standard security practices to protect data during processing and local storage,
+        but no method of transmission or storage is completely secure.
+      </p>
+
+      <h3 class="text-xl font-semibold mb-2">7. Contact Us</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-6">
+        If you have any questions about this Privacy Policy, contact us at:
+        <span class="font-medium">spacester7563@gmail.com</span>
+      </p>
       </div>
     </div>
   );
