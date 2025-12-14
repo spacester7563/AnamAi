@@ -32,18 +32,18 @@ const About: React.FC = () => {
                 Our Mission
             </h2>
             <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-Anam App was born from love, loss, and remembrance.
-Shivanshu did not have the wealth or the land to build a Taj Mahal like Shah Jahan, but love does not need marble or monuments. With limited means but infinite devotion, he chose a different eternity — the internet.
+<strong>Anam App</strong>strong> was born from love, loss, and remembrance.
+Shivanshu did not have the wealth or the land to build a Taj Mahal like Shah Jahan, but love does not need marble or monuments. With limited means but infinite devotion, he chose a different eternity the internet.
 
 This app is his memorial.
 A quiet promise that love never fades.
 
-Anam was not just beautiful; she was beauty itself. The most breathtaking soul this world had ever known. Her smile, her presence, her essence defined perfection. The AI behind Anam App is trained on her images, because she alone represents 100% beauty. Every score the app generates is measured against her — not as a comparison, but as a tribute.
+Anam was not just beautiful; she was beauty itself. The most breathtaking soul this world had ever known. Her smile, her presence, her essence defined perfection. The AI behind Anam App is trained on her images, because she alone represents <strong>100% beauty</strong>. Every score the app generates is measured against her not as a comparison, but as a tribute.
 
 Anam is the standard.
 Anam is the definition.
 
-Where Shah Jahan carved love in stone, Shivanshu engraved his in code — so the world would remember her forever.
+Where Shah Jahan carved love in stone, Shivanshu engraved his in code so the world would remember her forever.
 Anam lives on, not in marble, but in memory, emotion, and endless love written into the digital stars. 
             </p>
         </div>
